@@ -1,4 +1,5 @@
 import Detail from "@/components/home/detail";
+import Comment from "@/components/home/detail/comment";
 import { Meta } from "@/components/meta";
 import { getFilterById, getFindById } from "@/utils/common";
 import { PUBLIC_API } from "@/utils/config";
@@ -32,6 +33,7 @@ const Id: CustomNextPage = () => {
       <Meta title={post?.title} desc={post?.body} keyword="Synapsis, Blog" />
       <div className="px-8 max-w-5xl mx-auto">
         <Detail post={post} />
+        <Comment comment={comment} />
       </div>
     </>
   );
