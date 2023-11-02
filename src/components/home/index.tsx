@@ -27,13 +27,13 @@ function BlogCard() {
       <div className="container mx-auto grid grid-cols-1 items-start gap-y-20 gap-x-8 md:px-8 pt-10 pb-16  lg:grid-cols-2">
         {currentPosts.map((post: any) => (
           <div
-            className="card  bg-base-100 shadow-rise-100 border p-5"
+            className="card p-5 bg-base-100 shadow-lg border rounded-md"
             key={post.id}
           >
             <div className="card-body">
               <Link href={`/${post.id}`}>
-                <h2 className="card-title font-bold text-2xl">
-                  {wordLimits(post.title, 5)}
+                <h2 className="card-title font-bold text-2xl truncate">
+                  {post.title}
                 </h2>
               </Link>
               <p className=" mb-3">{wordLimits(post.body, 30)}</p>
