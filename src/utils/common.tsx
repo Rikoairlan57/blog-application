@@ -1,5 +1,3 @@
-export const currentYear = new Date().getFullYear();
-
 export function wordLimits(teks: string, wordCount: number) {
   const word = teks.split(" ");
   if (word.length <= wordCount) {
@@ -9,11 +7,3 @@ export function wordLimits(teks: string, wordCount: number) {
     return `${textCutting} ...`;
   }
 }
-
-export const getFindById = (props: any, idKey: string, id: any) => {
-  return props.find((item: any) => item[idKey] === id);
-};
-
-export const getFilterById = (props: any, idKey: string, id: any) => {
-  return props.filter((item: any) => item[idKey] === id);
-};

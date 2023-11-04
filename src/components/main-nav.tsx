@@ -7,7 +7,7 @@ const MainNav = () => {
   return (
     <nav className="mx-6 flex items-center space-x-4 lg:space-x-6">
       <Link href={"/"}>Blog</Link>
-      <Link href={"/user"}>User</Link>
+      <Link href={"/users"}>User</Link>
     </nav>
   );
 };
